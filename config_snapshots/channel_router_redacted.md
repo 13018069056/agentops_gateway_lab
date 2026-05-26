@@ -1,15 +1,15 @@
-# 云端智能体配置（脱敏）
+# 渠道路由配置（脱敏）
 ## 用途
-定义模型提供商与Agent映射
+飞书机器人与Agent绑定规则
 ## 位置
-D:\agentops-exp4\config\agents.json
+D:\agentops-exp4\config\channel_router.json
 
 {
-  "_comment": "云端模型路由配置，密钥从环境变量读取",
-  "provider": "redacted-provider",
-  "model": "redacted-model",
+  "_comment": "渠道路由，账号ID已脱敏",
+  "platform": "feishu",
+  "agent": "exp4-qwen",
   "enabled": true
 }
 
 ## 预期效果
-Agent可路由到云端模型，不暴露密钥
+群消息可自动路由到对应智能体
